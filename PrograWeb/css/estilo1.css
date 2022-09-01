@@ -1,0 +1,21 @@
+/* h1 esto es un selector */
+h1{color: darkgreen; font-size: 16px;}
+
+/* cuándo usamos las pulgadas como medidas son las cuales no dependen de la resolución de la pantalla, se hace el calculo dependiendno de la resolución del cmpo de la pantalla.
+ Los PT es un punto o sea una fracción de pulgada esun 1/72 de pulgada
+
+ pc es una pica que son doce puntos 
+ px esto es relativo a la resolución y al tamaño de pantalla del dispositivo.
+
+ EM ES EL TAMÑO RELATIVO DE LA LETRA QUE EL USUARIO PERSONALIZÓ EN SU TELEFONO O EN SU DISPOSITIVO.
+
+ % ES EL TAMAÑO DEL ELEMENTO PADRE 
+
+ VW es la medida merda o sea las medidas responsivas.
+*/
+
+p{color: yellowgreen;}
+/* Esto es la menera en el cual le das color a los parrafos */
+
+body{background-color: beige;}
+/* Este es para ponerle al body un color de fondo. */
