@@ -17,5 +17,18 @@ h1{color: darkgreen; font-size: 16px;}
 p{color: yellowgreen;}
 /* Esto es la menera en el cual le das color a los parrafos */
 
-body{background-color: beige;}
+body{background-color: beige;}/*SELECTOR*/
 /* Este es para ponerle al body un color de fondo. */
+
+#div1 {
+    width: 13%;
+    height: 100px;
+    background-color: tomato;
+    color: grey;
+/* ESte funciona de manera que el div tiene una clave y se aplica unicamente a esta sección o sea una caja*/
+}
+
+.rojo{
+    color: rebeccapurple;
+
+}
