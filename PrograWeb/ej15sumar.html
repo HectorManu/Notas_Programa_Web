@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sumar() {
+            alert("Hiciste clic")
+            var num1 = Number(document.getElementById("txt_num1").value);
+            var num2 = Number(document.getElementById("txt_num2").value);
+            var suma = num1 + num2;
+            alert("La suma es: "+suma)
+            document.getElementById("txt_num1").value="";
+            document.getElementById("txt_num2").value="";
+        }
+    </script>
+</head>
+<body>
+    <h1>suma</h1>
+    <!-- <form action="" method="post"> -->
+        <label for="tect_num1">numero 1</label>
+        <input type="text" id="txt_num1" name="txt_num1">
+        <label for="tect_num2">numero 2</label>
+        <input type="text" id="txt_num2" name="txt_num2">
+        <button onclick="sumar();">Sumar</button>
+    <!-- </form> -->
+    
+</body>
+</html>
