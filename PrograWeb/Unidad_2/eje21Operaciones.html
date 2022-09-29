@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="sumar.js"></script>
     <script>
         var result = 0;
         function calcular() {
             //condición para sumar
             if (document.getElementById("txtOp").value=="+") {
-                result = Number(document.getElementById("txtN2").value) + Number(document.getElementById("txtN1").value);
+                result = sumar(Number(document.getElementById("txtN2").value),Number(document.getElementById("txtN1").value));//utilizando un sumar externog
+                //result = Number(document.getElementById("txtN2").value) + Number(document.getElementById("txtN1").value);
                 document.getElementById("resultado").innerHTML = result;
             }
             // condición para resta
