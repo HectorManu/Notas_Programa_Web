@@ -6,14 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        var contador =0;
         function btn_click() {
-            // alert("Hiciste un click en el botón")
-            console.log("un click")
+            // alert("Hiciste un click en el botón");
+            console.log("un click");
+            contador++;
+            
+            if (contador % 2) {
+                document.getElementById("contador").innerHTML = contador;
+                
+            }else document.getElementById("contador").innerHTML = "<b>"+contador+"<b>";
+        }
+        function reset() {
+            contador = 0;
+            document.getElementById("contador").innerHTML = contador;
+        }
+        function dismi() {
+            if (contador==0) {
+                document.getElementById("contador").innerHTML = contador;
+            }else{
+                contador--;
+                document.getElementById("contador").innerHTML = contador;
+                // si ponemos inner text entonces lo que pasra será que agregamos texto y no código html
+            }
         }
     </script>
 </head>
 <body>
     <!-- <input type="button" value="Hacer click" onclick="btn_click();"> -->
-    <button onclick="btn_click">Hacer click</button>
+    <div id="contador"> 0 </div>
+    <button onclick="btn_click();">Hacer click</button>
+    <button onclick="reset();">Restablecer</button>
+    <button onclick="dismi();">Restar en uno</button>
 </body>
 </html>
