@@ -25,6 +25,16 @@
         div1.innerHTML += '<br> numero : '+auto;//mostramso el rarreglo
         auto.unshift(4);
         div1.innerHTML += '<br> numero : '+auto;//mostramso el rarreglo
+
+        // recorrer un arrego de diferentes maneras
+        for (let index = 0; index < auto.length; index++) {
+            const element = auto[index];
+            div1.innerHTML += '<br> numero : '+element;//mostramso el rarreglo
+        }
+        // formados+
+        auto.forEach(element => {
+            div1.innerHTML += '<br> numero : '+element;//mostramso el rarreglo
+        });
     </script>
 </body>
 </html>
