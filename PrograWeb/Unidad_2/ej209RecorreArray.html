@@ -10,22 +10,23 @@
     <h1>Recorre Arreglo </h1>
     <div id="div1"> </div>
     <script>
-        const arreglo = [10,40,30,50];
 
-        let salida = "";
+
+        // let salida = "";
         let histograma = function (dato, indice, arreglo) {
             let linea = "";
-            for (let x = 0; x < dato.length; x++) {
-                linea += "*";
-                salida += linea + "<br>";
-                const element = dato[x];
+            for (let x = 0; x < dato; x++) {
+                linea += "ඞ";
+                // salida += linea + "<br>";
+                document.getElementById("div1").innerHTML += linea + "<br>";
                 
             }
         }
+        const arreglo = [10,40,30,50];
         // Recorrer arreglo 
         arreglo.forEach(histograma);
 
-        document.getElementById("div1").innerHTML = salida;
+        // document.getElementById("div1").innerHTML = salida;
     </script>
 </body>
 </html>
