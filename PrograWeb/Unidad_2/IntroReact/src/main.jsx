@@ -6,6 +6,8 @@ import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import Unonuevo from "./pages/Unonuevo";
+import Garage from "./pages/Garage";
+import Lista from "./pages/Lista";
 
 
 export default function App() {
@@ -18,6 +20,8 @@ export default function App() {
           <Route path="blogs" element={<Blogs />} />
           <Route path="contact" element={<Contact />} />
           <Route path="unonuevo" element={<Unonuevo />} />
+          <Route path="garage" element={<Garage/>} />
+          <Route path="lista" element={<Lista/>} />
           <Route path="*" element={<NoPage />} />
 
         </Route>
