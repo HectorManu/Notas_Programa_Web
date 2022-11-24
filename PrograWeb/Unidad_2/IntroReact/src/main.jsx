@@ -8,6 +8,7 @@ import NoPage from "./pages/NoPage";
 import Unonuevo from "./pages/Unonuevo";
 import Garage from "./pages/Garage";
 import Lista from "./pages/Lista";
+import Sumar from "./pages/Sumar";
 
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="unonuevo" element={<Unonuevo />} />
           <Route path="garage" element={<Garage/>} />
           <Route path="lista" element={<Lista/>} />
+          <Route path="sumar" element={<Sumar/>} />
           <Route path="*" element={<NoPage />} />
 
         </Route>

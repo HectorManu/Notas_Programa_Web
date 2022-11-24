@@ -25,6 +25,9 @@ const Layout = () => {
                     <li className="nav-item">
                         <Link to="/lista" className="bg-primary text-white nav-link">Lista</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link to="/sumar" className="bg-primary text-white nav-link">Sumar</Link>
+                    </li>
                 </ul>
             </nav>
 
