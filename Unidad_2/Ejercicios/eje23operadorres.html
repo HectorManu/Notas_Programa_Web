@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // okey ql profesor nos comenta wu workaround es mover el código despueś per esa ese conocer como una función no elegante de la programación 
+        function page_loaded() {
+            let result;
+            let a = 5;
+            let b = 8;
+            // esta es una comparación pero en una sola línea 
+
+            result = (a > b) ? 'a mayor que b' : 'a menor o igual que b';
+            // la otra manera de hacer esto es la siguente pero ocupa mucho código 
+// pero esto ocupa muchocódigo
+            // if (a>b) {
+            //     result=true;
+            // }else result=false;
+
+
+            document.getElementById('div1').innerHTML =  result+ "<br> <br> el tipo de 'a' <b>"+typeof a+" </b> tipo de resultado <b>"+typeof result;
+                
+            // document.getElementById('div1').innerHTML = '3/2 = '+(3/2)+' <br> <br> 3.0/2 = '+(3.0/2);
+            document.getElementById('div').innerHTML = parseInt('3.5')+' '+parseFloat('3.5');
+
+            document.getElementById('div1').innerHTML = Date().toString;
+        }
+
+
+    </script>
+</head>
+
+<!-- la funcion de onload es cargar la página con todo declado para poder utilizar la funcion de la compaacion a que anteriormente pues nos daba un error -->
+<body onload="page_loaded();">
+    <h1>operadores</h1>
+    <div id="div1"></div>
+</body>
+
+</html>

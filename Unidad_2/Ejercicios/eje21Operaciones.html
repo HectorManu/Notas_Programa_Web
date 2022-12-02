@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="sumar.js"></script>
+    <script>
+        var result = 0;
+        function calcular() {
+            //condición para sumar
+            if (document.getElementById("txtOp").value=="+") {
+                result = sumar(Number(document.getElementById("txtN2").value),Number(document.getElementById("txtN1").value));//utilizando un sumar externog
+                //result = Number(document.getElementById("txtN2").value) + Number(document.getElementById("txtN1").value);
+                document.getElementById("resultado").innerHTML = result;
+            }
+            // condición para resta
+            if (document.getElementById("txtOp").value=="-") {
+                result = Number(document.getElementById("txtN2").value) - Number(document.getElementById("txtN1").value);
+                document.getElementById("resultado").innerHTML = result;
+            }
+            if (document.getElementById("txtOp").value=="*") {
+                result = Number(document.getElementById("txtN2").value) * Number(document.getElementById("txtN1").value);
+                document.getElementById("resultado").innerHTML = result;
+            }
+            if (document.getElementById("txtOp").value=="/") {
+                result = Number(document.getElementById("txtN1").value) / Number(document.getElementById("txtN2").value);
+                document.getElementById("resultado").innerHTML = result;
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <label for="txtN1">Número1: </label>
+    <input type="text" id="txtN1">
+
+    <input type="text" size="3" id="txtOp">
+
+    <label for="txtN2">Número2: </label>
+    <input type="text" id="txtN2"> =
+
+    <span id="resultado">0</span>
+
+    <button onclick="calcular();">Calcular</button>
+</body>
+</html>

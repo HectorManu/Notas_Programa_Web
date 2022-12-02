@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- autor : HECTOR MANURL RUIZ JUAREZ-->
+    <!-- PRACTICA 2.1  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title{
+            border: 1cm;
+            color: orange;
+        }
+    </style>
+    <script>
+        var contador =0;
+        function btn_click() {
+            // alert("Hiciste un click en el botón");
+            console.log("un click");
+            const multiplo = Number(document.getElementById("txtN1").value);
+            document.getElementById("div1").innerHTML="";
+            
+            for (let index = 0; index < 10; index++) {
+                const resultado = multiplo*(index+1);
+                // <tr> <td>1</td><td>2</td><td>3</td> </tr>
+                document.getElementById('div1').innerHTML += "<table border="+1+"><tr><td>"+multiplo+" * "+(index+1)+" = </td><td>"+resultado+"</td></tr></table>";
+            }
+        }
+        function reset() {
+            document.getElementById("div1").innerHTML="";
+        }
+        
+    </script>
+</head>
+<body>
+    <!-- <input type="button" value="Hacer click" onclick="btn_click();"> -->
+    <h1 class="title">Tabla de Multiplicar</h1>
+    <label for="txtN1">Tú número: </label>
+    <input type="text" id="txtN1">
+    <!-- <div id="contador"> 0 </div> -->
+    <button onclick="btn_click();">Generar Tabla</button>
+    <button onclick="reset();">Restablecer</button>
+    <div id="div1"> 
+    </div>
+    
+    
+    
+</body>
+</html>
