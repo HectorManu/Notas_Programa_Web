@@ -28,6 +28,15 @@ const Layout = () => {
                     <li className="nav-item">
                         <Link to="/sumar" className="bg-primary text-white nav-link">Sumar</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link to="/conversor" className="bg-primary text-white nav-link">Conversor</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/multipli" className="bg-primary text-white nav-link">Multiplicadora</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/invitados" className="bg-primary text-white nav-link">Lista de Invitados</Link>
+                    </li>
                 </ul>
             </nav>
 

@@ -9,6 +9,9 @@ import Unonuevo from "./pages/Unonuevo";
 import Garage from "./pages/Garage";
 import Lista from "./pages/Lista";
 import Sumar from "./pages/Sumar";
+import Conversor from "./pages/Conversor";
+import Multipli from "./pages/Multipli";
+import Invitados from "./pages/Invitados";
 
 
 export default function App() {
@@ -24,6 +27,9 @@ export default function App() {
           <Route path="garage" element={<Garage/>} />
           <Route path="lista" element={<Lista/>} />
           <Route path="sumar" element={<Sumar/>} />
+          <Route path="conversor" element={<Conversor/>} />
+          <Route path="multipli" element={<Multipli/>} />
+          <Route path="invitados" element={<Invitados/>} />
           <Route path="*" element={<NoPage />} />
 
         </Route>
