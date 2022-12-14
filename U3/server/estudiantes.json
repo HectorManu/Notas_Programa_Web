@@ -1,0 +1,26 @@
+{
+    "estudiante1": {
+            "nombre": "Juan Perez",
+            "carrera": "ISC",
+            "semestre": 7,
+            "id": "E18080001"
+        },
+    "estudiante2": {
+            "nombre": "Carla Lara",
+            "carrera": "ISC",
+            "semestre": 8,
+            "id": "E18080002"
+        },
+    "estudiante3": {
+            "nombre": "Luisa Mendez",
+            "carrera": "ISC",
+            "semestre": 7,
+            "id": "E18080003"
+        },
+    "estudiante4": {
+            "nombre": "Carlos Fernandez",
+            "carrera": "ISC",
+            "semestre": 9,
+            "id": "E18080004"
+        }
+}
