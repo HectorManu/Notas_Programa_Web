@@ -3,7 +3,7 @@ function getOffset(currentPage=1, listPerPage){//esto es para la paginación
 }
 
 function emptyOrRows(rows){
-    if(!rows){//si no hay reenglones entonces es un arreglo vacio
+    if(!rows){//si no hay renglones entonces es un arreglo vacio
         return [];
     }
     return rows;
